@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escolha seu Vendedor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      padding: 20px 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      padding: 20px 10px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #333333;
+      padding: 20px 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .vendedor {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .vendedor img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .info {
+      flex: 1;
+      text-align: left;
+    }
+
+    .info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .info p {
+      margin: 4px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 8px;
+      background-color: #25D366;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .botao:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media (max-width: 480px) {
+      .vendedor {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .vendedor img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .botao {
+        font-size: 13px;
+        padding: 7px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>Fluzão Construção</h1>
+    <h2>Vendedores Loja Rio das Pedras</h2>
+
+  <div class="container">
+
+    <div class="vendedor">
+      <img src="images/Mendes.jpg" alt="Foto do vendedor Mendes">
+      <div class="info">
+        <h3>Mendes</h3>
+        <p>(21) 96977-1805</p>
+        <a class="botao" href="https://wa.me/5521969771805?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento" target="_blank">Falar com Mendes</a>
+      </div>
+    </div>
+
+    <div class="vendedor">
+      <img src="images/Beatriz mota.jpg" alt="Foto da vendedora Beatriz Mota">
+      <div class="info">
+        <h3>Beatriz Mota</h3>
+        <p>(21) 99872-9737</p>
+        <a class="botao" href="https://wa.me/5521998729737?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento" target="_blank">Falar com Beatriz</a>
+      </div>
+    </div>
+
+    <div class="vendedor">
+      <img src="images/Ronny.jpg" alt="Foto do vendedor Ronny">
+      <div class="info">
+        <h3>Ronny</h3>
+        <p>(21) 98456-7603</p>
+        <a class="botao" href="https://wa.me/5521984567603?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento" target="_blank">Falar com Ronny</a>
+      </div>
+    </div>
+
+    <div class="vendedor">
+      <img src="images//Carlos Eduardo.jpg" alt="Foto do vendedor Carlos Eduardo">
+      <div class="info">
+        <h3>Carlos Eduardo</h3>
+        <p>(21) 99701-6300</p>
+        <a class="botao" href="https://wa.me/5521997016300?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Carlos</a>
+      </div>
+    </div>
+
+    <div class="vendedor">
+      <img src="images/jonas.jpg" alt="Foto do vendedor Jonas">
+      <div class="info">
+        <h3>Jonas Lima</h3>
+        <p>(21) 98259-5104</p>
+        <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Jonas</a>
+      </div>
+    </div>
+
+    <div class="vendedor">
+      <img src="images/igorsantos.jpg" alt="Foto do vendedor Igor Santos">
+      <div class="info">
+        <h3>Igor Santos</h3>
+        <p>(21) 99844-7486</p>
+        <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Igor</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
