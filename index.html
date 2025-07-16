@@ -34,8 +34,8 @@
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      gap: 10px;
+      padding: 10px;
       max-width: 1000px;
       margin: auto;
     }
@@ -46,7 +46,7 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
-      padding: 15px;
+      padding: 10px;
     }
 
     .vendedor img {
@@ -79,7 +79,7 @@
       display: inline-block;
       margin-top: 8px;
       background-color: #25D366;
-      color: white;
+      color: rgb(0, 0, 0);
       padding: 8px 12px;
       border-radius: 6px;
       text-decoration: none;
@@ -110,11 +110,18 @@
   </style>
 </head>
 <body>
-
-<h1>Fluzão Construção<br>Rio das Pedras</h1>
-<blockquote><h3><center>Precisando de Orçamento?<br>Fale agora com um de nossos vendedores!</h3></center></blockquote>
+<p><h3><center><h1>Fluzão Construção Rio das Pedras</h1>Precisando de Orçamento?<br>Fale agora com um de nossos vendedores!</h3</p>
 
   <div class="container">
+
+    <div class="vendedor">
+      <img src="images/jonas.jpg" alt="Foto do vendedor Jonas">
+      <div class="info">
+        <h3>Jonas Lima</h3>
+        <p>(21) 98259-5104</p>
+        <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Jonas</a>
+      </div>
+    </div>
 
     <div class="vendedor">
       <img src="images/Mendes.jpg" alt="Foto do vendedor Mendes">
@@ -151,16 +158,7 @@
         <a class="botao" href="https://wa.me/5521997016300?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Carlos</a>
       </div>
     </div>
-
-    <div class="vendedor">
-      <img src="images/jonas.jpg" alt="Foto do vendedor Jonas">
-      <div class="info">
-        <h3>Jonas Lima</h3>
-        <p>(21) 98259-5104</p>
-        <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank">Falar com Jonas</a>
-      </div>
-    </div>
-
+    
     <div class="vendedor">
       <img src="images/igorsantos.jpg" alt="Foto do vendedor Igor Santos">
       <div class="info">
@@ -172,6 +170,7 @@
     </div>
     
   </div>
-<center>Fluzão Construção 2025<br>Todos os direitos reservados.</center>
+  <p><h5><center>Fluzão Construção 2025<br>Todos os direitos reservados.</center></h5></p>
+
 </body>
 </html>
