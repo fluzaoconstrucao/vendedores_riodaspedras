@@ -14,120 +14,181 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Fluzão Materiais de Construção" />
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Fluzão Materiais de Construção | Reforma & Decoração | Compre Sem Sair de Casa</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Fluzão Materiais de Construção | Reforma & Decoração</title>
 
+  <style>
+    /* ======= RESET ======= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ======= HEADER ======= */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* ======= MAIN ======= */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .vendedor {
+      background: #f5f5f5; /* mesma cor do fundo da página */
+      border-radius: 10px;
+      width: 260px;
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .vendedor:hover {
+      transform: scale(1.03);
+    }
+
+    .vendedor img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .info h3 {
+      color: #222;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      font-size: 15px;
+    }
+
+    .botao:hover {
+      background: #1ebe57;
+    }
+
+    /* ======= FOOTER ======= */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      color: #555;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+
+    /* ======= RESPONSIVIDADE ======= */
+    @media (max-width: 768px) {
+      .vendedor {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .vendedor img {
+        width: 120px;
+        height: 120px;
+      }
+
+      header h2 {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header img {
+        height: 60px;
+      }
+
+      header h2 {
+        font-size: 15px;
+      }
+
+      .vendedor img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
-
-    <img src="images/logo-fluzao-1.webp" alt="" style="display:flex; margin: auto;" height="70px">
-
-
-    <h2
-      style="color: rgb(51, 50, 50);font-style:normal;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 20px;">
-      Precisando de orçamento?<br>Fale com um de nossos vendedores!
-    </h2>
-
-    
+    <img src="images/logo-fluzao-1.webp" alt="Logo Fluzão Materiais de Construção">
+    <h2>Precisando de orçamento?<br>Fale com um de nossos vendedores!</h2>
   </header>
 
   <main>
-
-    <div class="container">
-
-      <div class="vendedor">
-        <img src="images/jonas.jpg" alt="Foto do vendedor Jonas">
-        <div class="info">
-          <h3>Jonas Lima</h3>
-          <p>(21)98259-5104</p>
-          <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
-            target="_blank">Chamar vendedor</a>
-        </div>
+    <div class="vendedor">
+      <img src="images/jonas.jpg" alt="Foto do vendedor Jonas">
+      <div class="info">
+        <h3>Jonas Lima</h3>
+        <p>(21) 98259-5104</p>
+        <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
+          target="_blank">Chamar vendedor</a>
       </div>
-
     </div>
 
-    <div class="container">
-
-      <div class="vendedor">
-        <img src="images/igorsantos.jpg" alt="Foto do vendedor igorsantos">
-        <div class="info">
-          <h3>Igor Santos</h3>
-          <p>(21)99844-7486</p>
-          <a class="botao" href="https://wa.me/5521982595104?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
-            target="_blank">Chamar vendedor</a>
-        </div>
+    <div class="vendedor">
+      <img src="images/igorsantos.jpg" alt="Foto do vendedor Igor Santos">
+      <div class="info">
+        <h3>Igor Santos</h3>
+        <p>(21) 99844-7486</p>
+        <a class="botao" href="https://wa.me/5521998447486?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
+          target="_blank">Chamar vendedor</a>
       </div>
-
     </div>
-
-    <!-- <div class="vendedor">
-        <img src="images/THIAGO.JPG" alt="Foto do vendedor Thiago">
-        <div class="info">
-          <h3>Thiago</h3>
-          <p>(21)99385-6389</p>
-          <a class="botao" href="https://wa.me/5521993856389?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
-            target="_blank">Chamar vendedor</a>
-        </div>
-      </div>
-
-      <div class="vendedor">
-        <img src="images/Mendes.jpg" alt="Foto do vendedor Mendes">
-        <div class="info">
-          <h3>Mendes</h3>
-          <p>(21)96977-1805</p>
-          <a class="botao" href="https://wa.me/5521969771805?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
-            target="_blank">Chamar vendedor</a>
-        </div>
-      </div>
-
-      <div class="vendedor">
-        <img src="images/Beatriz mota.jpg" alt="Foto da vendedora Beatriz Mota">
-        <div class="info">
-          <h3>Beatriz Mota</h3>
-          <p>(21)99872-9737</p>
-          <a class="botao" href="https://wa.me/5521998729737?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
-            target="_blank">Chamar vendedora</a>
-        </div>
-      </div>
-
-      <div class="vendedor">
-        <img src="images/Ronny.jpg" alt="Foto do vendedor Ronny">
-        <div class="info">
-          <h3>Ronny</h3>
-          <p>(21)98456-7603</p>
-          <a class="botao" href="https://wa.me/5521984567603?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento"
-            target="_blank">Chamar vendedor</a>
-        </div>
-      </div>
-
-      <div class="vendedor">
-        <img src="images//Carlos Eduardo.jpg" alt="Foto do vendedor Carlos Eduardo">
-        <div class="info">
-          <h3>Carlos Eduardo</h3>
-          <p>(21)99701-6300</p>
-          <a class="botao" href="https://wa.me/5521997016300?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
-            target="_blank">Chamar vendedor</a>
-        </div> -->
-
-
-    </div>
-
   </main>
 
   <footer>
-
-    <p
-      style="text-align: center;color:rgb(81, 80, 80);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 14px">
-      Fluzão Construção 2025.<br> Todos os direitos reservados.
-    <p>
-
+    <p>Fluzão Construção 2025.<br>Todos os direitos reservados.</p>
   </footer>
-
-
 
 </body>
 
